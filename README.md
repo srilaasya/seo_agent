@@ -15,8 +15,6 @@ A multi-agent system for generating SEO-optimized blog content with comprehensiv
   - [4. Install Backend Dependencies](#4-install-backend-dependencies)
   - [5. Install Frontend Dependencies](#5-install-frontend-dependencies)
 - [Running the Application](#running-the-application)
-  - [Option 1: Using the Automated Script](#option-1-using-the-automated-script)
-  - [Option 2: Manual Startup (Preferred)](#option-2-manual-startup-preferred)
 - [Agent Workflow](#agent-workflow)
 - [Observability with Arize Phoenix](#observability-with-arize-phoenix)
 - [Troubleshooting](#troubleshooting)
@@ -167,35 +165,7 @@ This installs all required Node.js packages, including:
 
 ## Running the Application
 
-You can run the application using either the automated script or manual approach. Both methods work, but the manual approach is preferred if you're using virtual environments.
-
-### Option 1: Using the Automated Script
-
-We've provided a shell script that starts all components in separate terminal windows:
-
-```bash
-# Make the script executable
-chmod +x run_app.sh
-
-# Run the script
-./run_app.sh
-```
-
-The script will:
-1. Check if the necessary .env file exists
-2. Create temporary helper scripts in the appropriate directories
-3. Start the Phoenix server in a new terminal window
-4. Start the backend API server in another terminal window
-5. Start the frontend development server in a third terminal window
-6. Clean up temporary files when you exit the script with Ctrl+C
-
-**Note for macOS users**: The script uses the `open -a Terminal.app` command to launch separate terminal windows.
-
-**Important**: When using the script, each component will run in its own terminal window, but they will **not** automatically use your activated virtual environment. For this reason, we recommend the manual startup method below if you're using virtual environments.
-
-### Option 2: Manual Startup (Preferred)
-
-This approach gives you more control and ensures proper virtual environment activation:
+To run the application, you'll need to start three components in separate terminal windows:
 
 **Terminal 1: Start Phoenix Server**
 ```bash
