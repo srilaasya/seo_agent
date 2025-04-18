@@ -30,13 +30,13 @@ This application demonstrates a multi-agent approach to SEO content generation, 
 
 ### Agent Workflow
 
-![Agent Workflow Diagram](https://example.com/images/seo-agent-workflow.png)
+<img src="frontend/public/agentic_flow.png" alt="Agent Workflow Diagram" width="600">
 
 *Figure 1: Multi-agent workflow showing data flow from user input through Research, Outline, and Writing agents with Phoenix observability*
 
 ### Arize Phoenix Observability
 
-![Arize Phoenix Observability](https://example.com/images/arize-phoenix-tracing.png)
+<img src="frontend/public/arize_implementation.png" alt="Arize Implementation" width="567">
 
 *Figure 2: Arize Phoenix tracing architecture showing session tracking, data collection, and visualization capabilities*
 
